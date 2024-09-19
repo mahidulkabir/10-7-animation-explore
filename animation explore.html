@@ -1,12 +1,54 @@
 <DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title> Animation explore</title>
-        </head>
-        <body>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Animation explore</title>
+      <style>
+        h1 {
+          text-align: center;
+        }
+        .field {
+          background-color: blueviolet;
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+        }
+        .red-ball {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          background-color: rgb(219, 21, 21);
+          border: 1px solid black;
+          position: relative;
+          animation: ping-pong 3000ms linear 0s infinite normal;
+        }
+        @keyframes ping-pong {
+          0% {
+            left: 0px;
+            top: 0px;
+          }
+
+
+          50% {
+            left: 600px;
+            top: 500px;
+          }
+          
+          100% {
+            left: 1200px;
+            top: 0px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Animation ball Exploration</h1>
+      <div class="field">
+        <div class="red-ball">
             
-        </body>
-    </html>
+        </div>
+      </div>
+    </body>
+  </html>
 </DOCTYPE>
